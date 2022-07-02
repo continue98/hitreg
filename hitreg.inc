@@ -13,6 +13,12 @@
 #define WEAPON_CARPARK 52
 #define WEAPON_UNKNOWN 55
 
+#tryinclude <Pawn.RakNet>
+
+#if !defined PAWNRAKNET_INC_
+	#error "hitreg.inc required Pawn.RakNet. Link: https://github.com/katursis/Pawn.RakNet"
+#endif
+
 #if !defined MAX_FIRERATE_SAMPLES
 	#define MAX_FIRERATE_SAMPLES 5
 #endif
